@@ -1,3 +1,5 @@
+'use strict';
+
 const container = document.querySelector('#tbody');
 const data = [
   'https://jsonplaceholder.typicode.com/users',
@@ -24,7 +26,7 @@ function parseData(dataArrs) {
 document.addEventListener('DOMContentLoaded', init)
 
 function getUserName(users, id) {
-  return findedObj = users.find(obj => obj.id === id);
+  return users.find(obj => obj.id === id);
 }
 
 function createTodos(users, todos) {
